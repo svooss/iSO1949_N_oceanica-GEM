@@ -1,6 +1,6 @@
 ## iSO1949_N_oceanica-GEM: Genome-scale metabolic model of an industrial oleagionous microalga.
 
-[![Version](https://badge.fury.io/gh/SSB_WUR%2FiSO1949_N_oceanica-GEM.svg)](https://badge.fury.io/gh/SSB_WUR/iSO1949_N_oceanica-GEM)  
+[![Version](https://badge.fury.io/gh/svooss%2FiSO1949_N_oceanica-GEM.svg)](https://badge.fury.io/gh/svooss/iSO1949_N_oceanica-GEM)  
 [![Zenodo](https://zenodo.org/badge/1065827.svg)](https://zenodo.org/records/10658527)  
 
 #### Description
