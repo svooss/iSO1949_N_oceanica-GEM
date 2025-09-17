@@ -10,9 +10,7 @@ Developed by the Bioprocess Engineering (BPE) department and the laboratory of S
 
 #### Citation
 
-{{ Citation will be provided once available
-}}
-
+Citation will be provided once available
 
 #### Keywords
 
