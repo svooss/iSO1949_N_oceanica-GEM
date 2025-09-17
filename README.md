@@ -1,23 +1,13 @@
-> Introduction (please delete after reading):  
-[standard-GEM](https://github.com/MetabolicAtlas/standard-GEM) is a template repository that aims to standardize the format of genome-scale metabolic models (GEMs) versioned with git. In addition to encouraging the open-sourcing of GEMs, it facilitates the import of GEMs into databases and online websites. Moreover, it provides the community with a familiar structure that is easy to adopt through this repository itself. The template comes with a set of requirements and recommendations, packaged as to-do items in a hidden Markdown file in this repository `.standard-GEM.md`. After downloading this repository, or using it as a template, those to-do items provide guidance to how adherence to the standard can be obtained.
+## iSO1949_N_oceanica-GEM: Genome-scale metabolic model of an industrial oleagionous microalga.
 
-> Instructions for this `README` (please delete after reading):  
-This is the `README.md` template provided by [standard-GEM](https://github.com/MetabolicAtlas/standard-GEM) and was crafted to cover most use-cases.  
-Feel free to edit this template `README`. Blanks are indicated by `{{ test }}`. One may use a search function to find these `{{`. Here are some examples of blanks used throughout this file: `{{organization or username}}` is the organization name or username for this GitHub repository, eg. `SysBioChalmers`; `{{repository name}}` is the name of this GitHub repository, eg. `yeast-GEM`.  
-If you find this template does not fit your needs, we would appreciate if you could report this by creating a new issue on [standard-GEM](https://github.com/MetabolicAtlas/standard-GEM/issues).
-
-
-## {{repository name}}: {{repository description}}
-
-[![Version](https://badge.fury.io/gh/{{organization or username}}%2F{{repository name}}.svg)](https://badge.fury.io/gh/sysbiochalmers/yeast-gem)  
-[![Zenodo](https://zenodo.org/badge/{{Zenodo ID}}.svg)](https://zenodo.org/badge/latestdoi/{{Zenodo ID}})  
-[![Gitter chat](https://badges.gitter.im/{{organization or username}}/{{repository name}}.svg)](https://gitter.im/{{organization or username}}/{{repository name}})
-
+[![Version](https://badge.fury.io/gh/SSB_WUR%2FiSO1949_N_oceanica-GEM.svg)](https://badge.fury.io/gh/SSB_WUR/iSO1949_N_oceanica-GEM)  
+[![Zenodo](https://zenodo.org/badge/1065827.svg)](https://zenodo.org/records/10658527)  
 
 #### Description
 
-{{ fill in a short description or the paper abstract }}
+Genome-scale constraint-based metabolic model (GEM) of the oleaginous microalga Nannochloropsis oceanica. Build through orthology-based reconstruction with AuReMe, using the scaffold GEMs iCre1355 (Chlamyomonas reinhardtii), iLB1027_lipid (Phaeodactylum tricornutum), iRJ1321 (Microchloropsis gaditana) and iNS934 (Microchloropsis salina). Specifically curated on the lipid metabolism of N. oceanica. Contains two 'light acclimation modes', based on continuous steady state cultures acclimated to low light and high light. We used the biomass compositions and oxygen-based photosynthesis-irradiance (PI) curves to set the biomass equation and the non-growth associated maintenance rates. The GEM can predict the effect of light acclimation on CO2-based PI-curves.
 
+Developed by the Bioprocess Engineering (BPE) department and the laboratory of Systems and Synthetic Biology (SSB) of the Wageningen University and Research. Additional information available upon request.
 
 #### Citation
 
@@ -32,32 +22,50 @@ If you find this template does not fit your needs, we would appreciate if you co
 > Keywords are be separated by semicolons.
 > The `Model source` field contains the source(s) of the current model, eg existing GEMs. If possible, use the Markdown format to add the URL with the DOI. The (NCBI) taxonomy ID should be provided in the [format from identifiers.org](https://registry.identifiers.org/registry/taxonomy). For the genome identifier, please provide the ENA/GenBank/RefSeq identifier via *identifiers.org*, or from other sources such as PATRIC or KBase.  
 
-**Utilisation:** {{ experimental data reconstruction; multi-omics integrative analysis;, _in silico_ strain design; model template }}  
-**Field:** {{ metabolic-network reconstruction }}  
-**Type of model:** {{ reconstruction; curated }}  
-**Model source:** {{ [YeastMetabolicNetwork](http://doi.org/10.1038/nbt1492) }}  
-**Omic source:** {{ genomics; metabolomics }}  
-**Taxonomic name:** {{ _Saccharomyces cerevisiae_ }}  
-**Taxonomy ID:** {{ [taxonomy:559292](https://identifiers.org/taxonomy:559292) }}  
-**Genome ID:** {{ [insdc.gca:GCA_000146045.2](https://identifiers.org/insdc.gca:GCA_000146045.2)  }}  
-**Metabolic system:** {{ general metabolism }}  
-**Tissue:**  
-**Bioreactor:**    
-**Cell type:**  
-**Cell line:**  
-**Strain:** {{ S288C }}  
-**Condition:** {{ aerobic; glucose-limited; defined media }}  
+**Utilisation:** Experimental data reconstruction; _in silico_ strain design; model template  
+**Field:** Metabolic-network reconstruction, Microalgal biotechnology  
+**Type of model:** Reconstruction; curated  
+**Model source:** [iNS934](http://doi.org/10.1186/s12918-017-0441-1); [iRJ1321](http://doi.org/10.1016/j.algal.2017.08.014); [iLB1027_lipid](http://doi.org/10.1371/journal.pone.0155038); [iCre1355](http://doi.org/10.1111/tpj.13059)  
+**Omic source:** Genomics ; lipidomics  
+**Taxonomic name:** _Nannochloropsis oceanica_  
+**Taxonomy ID:** [taxonomy:1333499](https://identifiers.org/taxonomy:1333499)  
+**Genome ID:** [NoIMET1v2]([http://nandesyn.single-cell.cn/analysis/7)  
+**Metabolic system:** General metabolism ; lipid metabolism; photosynthesis mechanisms; photoacclimation; pigment metabolism.  
+**Bioreactor:**   Photobioreactors in steady state cyclostat (no dilution during night (8h), constant dilution during the day (16h))
+**Strain:** IMET1  
+**Condition:** High light acclimated (I_ph,0 of 600 µmol/m2/s); Low light acclimated (I_ph,0 of 200 µmol/m2/s), artificial seawater (ASW).  
 
 
 ### Installation
 
-{{ Be mindful of users who do not have a typical background - provide a clear overview of the required software. Also, there might be different requirements for users and collaborators. }}
+You can obtained the model by any of the following methods:
 
+If you have a Git client installed on your computer, you can clone the main branch of the iSO1949_N_oceanica-GEM repository.
+You can directly download the latest release as a ZIP file.
+If you want to contribute to the development of iSO1949_N_oceanica-GEM (see below), it is best to fork the iSO1949_N_oceanica-GEM repository to your own Github account.
 
-### Usage
+Model can be used with any GEM reading tool, such as COBRA or COBRApy.
 
-{{ Describe how to load and save the model. }}
+## Obtain model
 
+You can obtained the model by any of the following methods:
+1. If you have a Git client installed on your computer, you can clone the [`main`](https://github.com/svooss/iSO1949_N_oceanica-GEM) branch of the yeast-GEM repository.
+2. You can directly download [the latest release](https://github.com/svooss/iSO1949_N_oceanica-GEM/releases) as a ZIP file.
+3. If you want to contribute to the development of yeast-GEM (see [below](#below)), it is best to [fork](https://github.com/svooss/iSO1949_N_oceanica-GEM/fork) the iSO1949_N_oceanica repository to your own Github account.
+
+## Required software
+
+### Basic user
+
+If you want to use the model for your own model simulations, you can use **any software** that accepts SBML L3V1 FBCv3 formatted model files. This includes any of the following:
+* MATLAB-based
+  * [RAVEN Toolbox](https://github.com/SysBioChalmers/RAVEN) version 2.8.3 or later (recommended)  
+  * [COBRA Toolbox](https://github.com/opencobra/cobratoolbox)
+
+* Python-based
+  * [cobrapy](https://github.com/opencobra/cobrapy)  
+
+Please see the installation instructions for each software package.
 
 ### Contributing
 
@@ -66,4 +74,4 @@ Contributions are always welcome! Please read the [contributing guideline](.gith
 
 ### Contributors
 
-Code contributors are reported automatically by GitHub under [Contributors](https://github.com/{{organization or username}}/{{repository name}}/graphs/contributors), while other contributions come in as [Issues](https://github.com/{{organization or username}}/{{repository name}}/issues).
+Code contributors are reported automatically by GitHub under [Contributors](https://github.com/svooss/iSO1949_N_oceanica-GEM/graphs/contributors), while other contributions come in as [Issues](https://github.com/iSO1949_N_oceanica-GEM/issues).
