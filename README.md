@@ -10,9 +10,7 @@ Developed by the Bioprocess Engineering (BPE) department and the laboratory of S
 
 #### Citation
 
-{{ provide the citation once available, for example:
-  > Lu, H., Li, F., Sánchez, B.J. et al (2019). A consensus S. cerevisiae metabolic model Yeast8 and its ecosystem for comprehensively probing cellular metabolism. Nat Commun 10, 3586 [doi:10.1038/s41467-019-11581-3](https://doi.org/10.1038/s41467-019-11581-3)
-
+{{ Citation will be provided once available
 }}
 
 
